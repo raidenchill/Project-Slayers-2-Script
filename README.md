@@ -1,13 +1,22 @@
-# Project Slayers 2 Script
+# Anime-Inspired Tower Defense — Roblox Studio Starter
 
-A Roblox Studio Luau starter project for building and testing your own Project Slayers-inspired systems.
+This is an original anime-inspired tower-defense framework for Roblox Studio. It is designed to give you the core architecture of a game with waves, currency, units, upgrades, enemies, and UI without copying another game's copyrighted characters, maps, names, or assets.
 
-## Admin boss tools
+## Included
+- Player Cash and Gems
+- 20-wave game loop
+- Wave UI
+- Enemy service with health/damage
+- Three original unit definitions
+- Starter tower-defense UI
+- Server-side player stats
 
-For your own Roblox experience, bosses can be tagged with `Boss` using `CollectionService`.
+## Studio setup
+1. Create the folders shown by the paths under `src` inside Roblox Studio.
+2. Put `GameConfig.lua`, `EnemyService.lua`, `WaveService.server.lua`, and `PlayerData.server.lua` in `ServerScriptService`.
+3. Put `UnitDefinitions.lua` in `ReplicatedStorage`.
+4. Put `TowerDefenseUI.client.lua` in `StarterPlayer > StarterPlayerScripts`.
+5. Add your own map, enemy models, unit models, path nodes, placement system, attack system, and summoning UI.
 
-- **U** — scan for tagged bosses within the configured radius.
-- **Y** — server-side one-hit the nearest tagged boss.
-- Edit `src/AdminBossConfig.lua` and replace the example UserId with your Roblox UserId.
-
-The one-hit action is validated on the server and only configured admin UserIds can invoke it. This is intended for an experience you control, not for modifying someone else's live game.
+## Important
+All characters, names, maps, animations, sounds, and visual assets should be your own or properly licensed. The included names are original placeholders.

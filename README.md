@@ -2,9 +2,12 @@
 
 A Roblox Studio Luau starter project for building and testing your own Project Slayers-inspired systems.
 
-## Included
-- Configurable training UI
-- Local practice controls
-- Clean ModuleScript structure
+## Admin boss tools
 
-This repository is intended for Roblox Studio development and private/test experiences. It does not include exploit or executor code.
+For your own Roblox experience, bosses can be tagged with `Boss` using `CollectionService`.
+
+- **U** — scan for tagged bosses within the configured radius.
+- **Y** — server-side one-hit the nearest tagged boss.
+- Edit `src/AdminBossConfig.lua` and replace the example UserId with your Roblox UserId.
+
+The one-hit action is validated on the server and only configured admin UserIds can invoke it. This is intended for an experience you control, not for modifying someone else's live game.
